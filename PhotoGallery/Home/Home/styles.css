@@ -1,0 +1,284 @@
+html{
+    max-width: 100%;
+    max-height: 100%;
+    background-color: rgb(19, 18, 18);
+}
+body{
+    max-width: 100%;
+    max-height: 100%;
+}
+.header{
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    top: 2%;
+    transform: translate(-50% );
+}
+.logo{
+    height: 105px;
+    width: 650px;
+    transition: 0.3s;
+}
+.logo:hover{
+    cursor: pointer;
+    opacity: 0.88;
+}
+
+.menu{
+    position: absolute;
+    top: 2%;
+    left: 91%;
+    max-height: 50px;
+    max-width: 50px;
+    transform: translate(90%, 10%);
+}
+.burger{
+    height: 70px;
+    width: 70px;
+    transform: rotate(180deg);
+}
+.burger:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.list{
+    z-index: 0;
+    position: absolute;
+    left: -120%;
+    top: -1000%;
+    height: 210px;
+    width: 100px;
+    color: white;
+    background-color: rgb(19, 18, 18);
+    padding: 9px;
+    border-radius: 10px;
+    text-align: right;
+}
+link:hover{
+    cursor: pointer;
+}
+.home{
+    display: block;
+    margin-bottom: 12px;
+    color: white;
+    font-style: normal;
+}
+.home:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.gall{
+    display: block;
+    margin-bottom: 12px;
+    color: white;
+}
+.gall:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.wed{
+    display: block;
+    margin-bottom: 12px;
+    color: white;
+}
+.wed:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.vid{
+    display: block;
+    margin-bottom: 12px;
+    color: white;
+}
+.vid:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.blog{
+    display: block;
+    margin-bottom: 12px;
+    color: white;
+}
+.blog:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.search{
+    display: block;
+    margin-bottom: 12px;
+    color: white;
+}
+.search:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.cont{
+    display: block;
+    margin-bottom: 12px;
+    color: white;
+}
+.cont:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.slideshow-container {
+    max-width: 500px;
+    z-index: -1;
+    position: absolute;
+    top: 9%;
+    left: 20%;
+    transform: translate(-35%, 20%);
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -20px;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 0.1875em 0.1875em 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 0.1875em 0 0 0.1875em;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    max-width: 500px;
+    height: 56px;
+    background-color: rgb(44, 41, 41);
+    opacity: 0.8;
+    color: White;
+    font-size: 28px;
+    position: absolute;
+    bottom: -12.8%;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 0.5em 0.75em;
+    position: absolute;
+    top: 0;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+.info{
+    z-index: -1;
+    color: white;
+    background-color: rgb(44, 41, 41);
+    max-width: 600px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    padding: 15px;
+}
+.slide1, .slide2, .slide3{
+    width: 500px;
+}
+@media screen and (max-width: 800px){
+    .logo{
+        max-width: 350px;
+        height: auto;
+    }
+    .info{
+        width: 40%;
+        left: 54%;
+    }
+    .slideshow-container {
+        max-width: 300px;
+        position: absolute;
+        top: 24%;
+        left: 20%;
+        transform: translate(-35%, 20%);
+        margin: auto;
+    }
+    .slide1, .slide2, .slide3{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 980px){
+    .menu{
+        left: 86%;
+    }
+    .logo{
+        max-width: 350px;
+        height: auto;
+    }
+    .info{
+        width: 40%;
+        left: 54%;
+    }
+    .slideshow-container {
+        max-width: 300px;
+        position: absolute;
+        top: 24%;
+        left: 20%;
+        transform: translate(-35%, 20%);
+        margin: auto;
+    }
+    .slide1, .slide2, .slide3{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 490px){
+    .menu{
+        left: 76%;
+        top: 3%;
+    }
+    .logo{
+        max-width: 380px;
+        height: auto;
+        margin-top: 20px;
+        margin-right: 98px;
+    }
+    .info{
+        width: 80%;
+        left: 7.5%;
+        top: 60%;
+    }
+    .slideshow-container {
+        max-width: 300px;
+        position: absolute;
+        top: 14%;
+        left: 41%;
+        transform: translate(-35%, 20%);
+        margin: auto;
+    }
+    .slide1, .slide2, .slide3{
+        width: 300px;
+    }
+}
