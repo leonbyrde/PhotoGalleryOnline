@@ -1,0 +1,180 @@
+html{
+    max-width: 100%;
+    max-height: 100%;
+    background-color: rgb(19, 18, 18);
+}
+body{
+    max-width: 100%;
+    max-height: 100%;
+}
+.header{
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    top: 2%;
+    transform: translate(-50% );
+}
+.logo{
+    height: 105px;
+    width: 650px;
+    transition: 0.3s;
+}
+.logo:hover{
+    cursor: pointer;
+    opacity: 0.88;
+}
+
+.menu{
+    position: absolute;
+    top: 2%;
+    left: 91%;
+    height: 50px;
+    width: 50px;
+    transform: translate(90%, 10%);
+}
+.burger{
+    height: 70px;
+    width: 70px;
+    transform: rotate(180deg);
+}
+.burger:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.list{
+    z-index: 0;
+    position: absolute;
+    left: -120%;
+    top: -1000%;
+    height: 210px;
+    width: 100px;
+    color: white;
+    background-color: rgb(19, 18, 18);
+    padding: 9px;
+    border-radius: 10px;
+    text-align: right;
+}
+link:hover{
+    cursor: pointer;
+}
+.home{
+    display: block;
+    margin-bottom: 12px;
+    color: white;
+    font-style: normal;
+}
+.home:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.gall{
+    display: block;
+    margin-bottom: 12px;
+    color: white;
+}
+.gall:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.wed{
+    display: block;
+    margin-bottom: 12px;
+    color: white;
+}
+.wed:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.vid{
+    display: block;
+    margin-bottom: 12px;
+    color: white;
+}
+.vid:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.blog{
+    display: block;
+    margin-bottom: 12px;
+    color: white;
+}
+.blog:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.search{
+    display: block;
+    margin-bottom: 12px;
+    color: white;
+}
+.search:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.cont{
+    display: block;
+    margin-bottom: 12px;
+    color: white;
+}
+.cont:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.images1{
+    top: 20%;
+    left: 3%;
+}
+.images2{
+    top: 20%;
+    left: 22%;
+}
+.images3{
+    top: 20%;
+    left: 41%;
+}
+.images4{
+    top: 20%;
+    left: 60%;
+}
+.images5{
+    top: 20%;
+    left: 79%;
+}
+.images6{
+    top: 50%;
+    left: 3%;
+}
+.images1, .images2, .images3, .images4, .images5, .images6{
+    position: absolute;
+    z-index: -1;
+    max-width: 200px;
+}
+
+@media screen and (max-width: 800px){
+    .menu{
+        left: 82%;
+    }
+    .logo{
+        max-width: 350px;
+        height: auto;
+    }
+    .info{
+        width: 40%;
+        left: 54%;
+    }
+    .slideshow-container {
+        max-width: 300px;
+        position: absolute;
+        top: 24%;
+        left: 20%;
+        transform: translate(-35%, 20%);
+        margin: auto;
+    }
+    .slide1, .slide2, .slide3{
+        width: 300px;
+    }
+    .images1, .images2, .images3, .images4, .images5, .images6{
+        max-width: 80px;
+    }
+}
