@@ -28,6 +28,57 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        
+        <div class="top-bar">
+            <div class="twitter">
+
+            </div>
+            <div class="insta">
+
+            </div>
+            <div class="facebook">
+
+            </div>
+            <div class="header">
+                <img class="logo" src="../Home/logo.png" href="index.html">
+            </div>
+            <div class="menu">
+                <img class="burger" id="burger" src="../Home/burger.png">
+                <div class="list" id="list">
+                    <a class="home" href="../../index.html">Home</a></form>
+
+                    <a class="gall" href="../Gallery/gallery.html">Gallery</a></form>
+                    
+                    <a class="wed" href="../../index.html">Weddings</a></form>
+                    
+                    <a class="vid" href="../../index.html">Video</a></form>
+                    
+                    <a class="blog" href="../../index.html">Blog</a></form>
+                    
+                    <a class="search" href="../../index.html">Search</a></form>
+                    
+                    <a class="cont" href="../../index.html">Contact Us</a></form>
+                </div>
+            </div>
+        </div>
+        <div class="images1">
+            <img src="weddings.png">
+        </div>
+        <script>
+            let list = document.getElementById("list");
+            let burger = document.getElementById("burger");
+    
+            burger.onclick = function(){
+                list.style.top = "160%";
+                list.style.opacity = "1";
+                list.style.transition = ".4s";
+                list.classList.remove("disable");
+            }
+            list.onmouseleave = function(){
+                list.style.top = "-1000%";
+                list.style.opacity = "0";
+                list.style.transition = ".4s";
+                list.classList.add("disable");
+            }
+        </script>
     </body>
 </html>
